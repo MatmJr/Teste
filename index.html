@@ -5,808 +5,462 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio</title>
+  <title>Marco Mialaret Júnior — Data Architect &amp; Professor</title>
+  <meta name="description" content="Marco Mialaret Júnior — Senior Data Architect and Professor. PhD in Computer Science (UFPE), researching phase-type distributions for system reliability. Building data pipelines and agentic AI systems.">
 
-  <!--
-    - favicon
-  -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!--
-    - #MAIN
-  -->
+  <!-- ============ TOPBAR ============ -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="#top" class="brand">Marco Mialaret<span class="dot">.</span></a>
 
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Marco Mialaret" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Marco Mialaret">Marco Mialaret</h1>
-
-          <p class="title">Educator & Data Scientist</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:marcomialaret@gmail.com" class="contact-link">marcomialaret@gmail.com</a>
-            </div>
-
-          </li>      
-
- 
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1985-10-28">Octuber 28, 1985</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Recife, Pernambuco, BR</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
+      <nav class="nav-links" data-nav-links>
+        <a href="#about" data-nav-link>About</a>
+        <a href="#resume" data-nav-link>Resume</a>
+        <a href="#publications" data-nav-link>Publications</a>
+        <a href="#projects" data-nav-link>Projects</a>
+        <a href="#contact" data-nav-link>Contact</a>
       </nav>
 
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I have a degree in Mathematics Education from UFRPE (2008), with a Master's degree inMathematics (2011), 
-            and I have been working in higher education since 2011. In 2016, I startedstudying topics related to Computational Mathematics 
-            and ended up discovering a new passion.In 2019, I was accepted into the Ph.D. program at CIN to develop 
-            a research project in the field ofperformance analysis of systems.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">IT Instructor</h4>
-
-                <p class="service-item-text">
-                  As a IT Instructor at Trybe, I am responsible for 
-                  teaching studentsthe necessary skills to become well-rounded 
-                  software developers,prepared for the job market.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Research</h4>
-
-                <p class="service-item-text">
-                  I am conducting research in the field of reliability,
-                  specifically focusing on the utilization of well-known 
-                  distributions calledPhase-type distributions to model 
-                  system reliability.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data Science Projects</h4>
-
-                <p class="service-item-text">
-                  I specialize in data science, with a strong focus on pre-processing,
-                  exploratory data analysis, and data preparation.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Machine Learning</h4>
-
-                <p class="service-item-text">
-                  I study and develop machine learning methods, possessing expertise in a range of techniques.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section> 
-
-        <!--
-          - skills
-        -->
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Python</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Machine Learning</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">SQL</h5>
-                <data value="60">60%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">R</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>       
-      
-
-      </article>
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <li class="timeline-item">
-
-                <h4 class="h4 timeline-item-title">Ph.D. in Computer Science</h4>
-  
-                <span>2019 — present</span>
-  
-                <p class="timeline-text">
-                  Ph.D. in Computer Science
-                  In my Ph.D. program, I am conducting research in the field of reliability,specifically focusing on the utilization of 
-                  well-known distributions calledPhase-type distributions to model system reliability. In this research, Iemploy EM algorithms 
-                  to estimate the parameters of these distributionsand generate the corresponding functions that represent them. The significant 
-                  advantage of this approach lies in the flexibility it providesthrough the understanding and utilization of these functions.
-                </p>
-  
-              </li>
-
-              <li class="timeline-item">
-
-                <h4 class="h4 timeline-item-title">SENAC EAD</h4>
-  
-                <span>2021 — 2023</span>
-  
-                <p class="timeline-text">
-                  Database Technologist
-                  I received a short-term training in database management, which helpedme gain a better understanding of the key 
-                  concepts of SQL and NoSQL.During the program, I had the opportunity to delve deeper into datamodeling, querying, 
-                  and information manipulation using the SQLlanguage. Additionally, this training introduced me to a new language,Java, 
-                  which opened up new possibilities in my programming skills.
-                </p>
-  
-              </li>
-
-              <li class="timeline-item">
-
-                <h4 class="h4 timeline-item-title">Universidade Federal da Paraíba</h4>
-  
-                <span>2009 — 2011</span>
-  
-                <p class="timeline-text">
-                  Master of Science in Mathematics
-                  During my Master's degree, I had the opportunity to delve into theconcepts and techniques of algebraic geometry,
-                   as well as developresearch skills to investigate problems in this field. My thesis focused ona specific topic 
-                   in algebraic geometry, and I achieved significant results,which further fueled my passion and dedication to 
-                   this discipline.
-                </p>
-  
-              </li>
-              
-              <h4 class="h4 timeline-item-title">Universide Federal Rural de Pernambuco</h4>
-
-              <span>2005 — 2008</span>
-
-              <p class="timeline-text">
-                Mathematics Education
-                My initial education was in the field of mathematics education, where Igained valuable insights 
-                into teaching mathematics. However, it wasduring this time that I discovered my passion for 
-                research and had myfirst exposure to programming. This experience sparked my curiosityand ignited 
-                a deep interest in exploring the intersection of mathematics,research, and programming.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Computer Science Instructor</h4>
-
-              <span>07/2022 — Present</span>
-
-              <p class="timeline-text">
-                Employer: Trybe
-                As a Computer Science Instructor, I am responsible for teaching studentsthe 
-                necessary skills to become well-rounded software developers,prepared for the 
-                job market. I specialize in the computer sciencemodule, with a focus on the 
-                Python programming language. Some of myresponsibilities include preparing and 
-                delivering classroom or virtuallessons using teaching materials provided by the 
-                school or createdindependently. I guide and mentor students in the development 
-                ofprojects and practical exercises. Additionally, I assess students'performance 
-                and provide constructive feedback to help them improve. Idevelop and update 
-                educational content, including lesson plans,exercises, and projects. Collaboration
-                with other instructors, managers,and support teams through regular meetings is 
-                crucial to discuss courseprogress and plan improvements. Staying up-to-date with 
-                trends andadvancements in technology and education is essential to bringinnovation 
-                into the classroom and contribute to overall schooldevelopment.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Infrastructure Support</h4>
-
-              <span>01/2022 — 07/2022</span>
-
-              <p class="timeline-text">
-                Employer: Tecnosolve
-                As an Infrastructure Support professional, I am responsible for providingtechnical assistance
-                 and resolving issues related to the IT infrastructure.Some of my key responsibilities include:
-                1. Responding to and addressing technical support requests from end-users.
-                2. Diagnosing hardware, software, network, and operating systemproblems.
-                3. Monitoring and managing computer networks and backup systems.
-                4. Managing information security issues.
-                5. Documenting and tracking all technical support requests andresolutions.
-                I strive to ensure the smooth functioning of the IT infrastructure,promptly resolving 
-                technical issues to minimize downtime andmaximize productivity for end-users. I maintain 
-                accurate documentationof support requests and resolutions to facilitate future troubleshootingand 
-                provide a seamless user experience.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Professor</h4>
-
-              <span>10/2017 — 01/2022</span>
-
-              <p class="timeline-text">
-                Employer: UNIFAVIP
-                Professor of basic engineering courses.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Professor</h4>
-
-              <span>10/2015 — 05/2016</span>
-
-              <p class="timeline-text">
-                Employer: UFRPE
-                Professor of basic engineering courses.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Professor</h4>
-
-              <span>08/2013 — 10/2015</span>
-
-              <p class="timeline-text">
-                Employer: UNINASSAU
-                Professor of basic engineering courses.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Professor</h4>
-
-              <span>08/2011 — 08/2013</span>
-
-              <p class="timeline-text">
-                Employer: UFRPE
-                Professor of basic engineering courses.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Statistics</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Data Science</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Machine Learning</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Statistics</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Data Science</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Machine Learning</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="Statistics">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Em breve</h3>
-
-                <p class="project-category">Statistics</p>
-
-              </a>
-            </li>
-          
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Em breve.</h3>
-
-                  <p class="blog-text">
-                    Em Breve.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-
-          </ul>
-
-        </section>
-
-      </article>
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-        
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
+      <div class="topbar-actions">
+        <button class="icon-btn theme-toggle" data-theme-toggle aria-label="Toggle color theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
+        </button>
+        <button class="icon-btn nav-toggle" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+        </button>
+      </div>
     </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div>
+          <span class="hero-kicker">Recife, Brazil</span>
+          <h1 class="hero-title">Marco Mialaret <span class="accent">Júnior</span></h1>
+          <p class="hero-role">
+            <b>Senior Data Architect</b> &amp; <b>Professor</b> — I design data pipelines and
+            agentic AI systems, and hold a PhD in Computer Science researching how phase-type
+            distributions model system reliability.
+          </p>
+
+          <ul class="hero-meta">
+            <li><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10.5V19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8.5"/><path d="M2 9l10-6 10 6"/></svg> FSBR · TJPE</span></li>
+            <li><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5"/></svg> Cesar School</span></li>
+            <li><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Recife, PE, Brazil</span></li>
+          </ul>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              View projects
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-outline">Get in touch</a>
+            <a href="https://github.com/MatmJr" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub profile">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.6.1-3.2 0 0 1.1-.3 3.4 1.3a12 12 0 0 1 6.2 0c2.3-1.6 3.4-1.3 3.4-1.3.7 1.7.2 2.9.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/marco-mialaret-junior/" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn profile">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.5v-5.6c0-1.3 0-3-1.9-3s-2.1 1.5-2.1 3v5.6H9.4V9h3.4v1.6c.5-.9 1.7-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.1zM5.3 7.4A2 2 0 1 1 5.3 3.4a2 2 0 0 1 0 4zM7 20.4H3.6V9H7v11.4z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-portrait">
+          <div class="hero-portrait-frame">
+            <img src="./assets/images/my-avatar.png" alt="Portrait of Marco Mialaret Júnior" width="260" height="260">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOCUS AREAS ============ -->
+    <section aria-label="Focus areas">
+      <div class="container">
+        <div class="focus-grid" data-reveal-group>
+          <div class="focus-card" data-reveal>
+            <div class="focus-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div>
+            <h3>Data architecture</h3>
+            <p>Ingestion and integration pipelines across structured and unstructured sources, and data-driven system design.</p>
+          </div>
+          <div class="focus-card" data-reveal>
+            <div class="focus-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="8" width="18" height="12" rx="2"/><circle cx="8.5" cy="14" r="1.3" fill="currentColor" stroke="none"/><circle cx="15.5" cy="14" r="1.3" fill="currentColor" stroke="none"/><path d="M12 8V4"/><circle cx="12" cy="3" r="1" fill="currentColor" stroke="none"/></svg></div>
+            <h3>Agentic AI systems</h3>
+            <p>LLM-based agents and services — including an MCP server in FastAPI for orchestrating intelligent workflows.</p>
+          </div>
+          <div class="focus-card" data-reveal>
+            <div class="focus-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="20" x2="4" y2="11"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="20" y1="20" x2="20" y2="15"/></svg></div>
+            <h3>Reliability &amp; statistics</h3>
+            <p>Modeling system failure times with phase-type distributions, fitted via Expectation-Maximization.</p>
+          </div>
+          <div class="focus-card" data-reveal>
+            <div class="focus-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5"/></svg></div>
+            <h3>Teaching</h3>
+            <p>Data Engineering, Statistical Inference and Data Analysis — teaching since 2011, from calculus to Big Data.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">About</span>
+          <h2 class="section-title">From algebraic geometry to data architecture</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy" data-reveal>
+            <p>
+              I hold a degree in Mathematics Education from UFRPE (2008) and a Master's in
+              Mathematics (2011), with research in algebraic geometry. Around 2018 my interests
+              shifted toward computational mathematics, and in 2023 I completed a technologist
+              degree in Database Management at SENAC — the step that moved me fully into data.
+            </p>
+            <p>
+              In 2026 I completed my PhD in Computer Science at CIn-UFPE, researching statistical
+              models for system failure times using phase-type distributions, estimated with
+              Expectation-Maximization algorithms. Today I work as a Senior Data Architect at TJPE
+              (via FSBR), building ingestion pipelines and agentic AI solutions, and I teach Data
+              Engineering, Statistical Inference and Data Analysis at Cesar School.
+            </p>
+          </div>
+
+          <div class="skills-panel" data-reveal>
+            <div class="skill-group">
+              <h4>Languages &amp; data</h4>
+              <div class="pill-row">
+                <span class="pill">Python</span>
+                <span class="pill">Java</span>
+                <span class="pill">SQL</span>
+                <span class="pill">PySpark</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h4>Analytics &amp; AI</h4>
+              <div class="pill-row">
+                <span class="pill">Machine Learning</span>
+                <span class="pill">LLM</span>
+                <span class="pill">Power BI</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h4>Cloud &amp; tools</h4>
+              <div class="pill-row">
+                <span class="pill">Amazon EC2</span>
+                <span class="pill">Amazon RDS</span>
+                <span class="pill">Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESUME: EXPERIENCE + EDUCATION ============ -->
+    <section id="resume">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Resume</span>
+          <h2 class="section-title">Experience &amp; education</h2>
+        </div>
+
+        <div class="timeline-cols">
+          <div data-reveal>
+            <div class="timeline-head">
+              <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+              <h3>Experience</h3>
+            </div>
+
+            <ol class="timeline">
+              <li class="timeline-item">
+                <h4>Senior Data Architect</h4>
+                <span class="timeline-org">FSBR — Fábrica de Software do Brasil · allocated at TJPE</span>
+                <span class="timeline-meta">Nov 2025 — Present · Recife, Brazil</span>
+                <p>Ingestion and integration pipelines for structured and unstructured data, and data-driven architecture design. Building agentic AI solutions, including an MCP service in FastAPI to orchestrate intelligent workflows and automate processing.</p>
+              </li>
+              <li class="timeline-item">
+                <h4>Qualification Consultant — Professor</h4>
+                <span class="timeline-org">Cesar School</span>
+                <span class="timeline-meta">Jan 2026 — Present · Recife</span>
+                <p>Teaching Data Engineering, Statistical Inference and Data Analysis.</p>
+              </li>
+              <li class="timeline-item">
+                <h4>Development Project Manager</h4>
+                <span class="timeline-org">Faculdade SENAC</span>
+                <span class="timeline-meta">Dec 2024 — Nov 2025 · Recife, Brazil</span>
+                <p>Led "Hub do Comércio," a digital platform for Fecomércio-PE built on a data lakehouse architecture. Consolidated data from IBGE, Banco Central, Receita Federal and primary sources into interactive dashboards, automated reports and financial management tools.</p>
+              </li>
+              <li class="timeline-item">
+                <h4>Technical Instructor II</h4>
+                <span class="timeline-org">Trybe</span>
+                <span class="timeline-meta">Jul 2022 — Jan 2024</span>
+                <p>Mentored students in Python and Java through practical projects — system maintenance, testing, code review and course material development.</p>
+              </li>
+              <li class="timeline-item">
+                <h4>Infrastructure Support</h4>
+                <span class="timeline-org">Tecnosolve</span>
+                <span class="timeline-meta">Jan 2022 — Jul 2022 · Recife, Brazil</span>
+                <p>End-user technical support; diagnosed hardware, software, network and OS issues, and documented resolutions.</p>
+              </li>
+              <li class="timeline-item">
+                <h4>Assistant Professor</h4>
+                <span class="timeline-org">UFRPE · UNINASSAU · UNIFAVIP · SENAC</span>
+                <span class="timeline-meta">Aug 2011 — Jan 2025 · Recife &amp; Caruaru, Brazil</span>
+                <p>Taught foundational engineering courses — Calculus, Linear Algebra, Analytic Geometry, Probability &amp; Statistics, Differential Equations, Numerical Methods — as well as Big Data, Data Science, Relational Databases and Project Management.</p>
+              </li>
+            </ol>
+          </div>
+
+          <div data-reveal>
+            <div class="timeline-head">
+              <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5"/></svg></span>
+              <h3>Education</h3>
+            </div>
+
+            <ol class="timeline">
+              <li class="timeline-item">
+                <h4>PhD in Computer Science</h4>
+                <span class="timeline-org">UFPE (CIn)</span>
+                <span class="timeline-meta">Aug 2019 — Feb 2026 · Recife, Brazil</span>
+                <p>Research in reliability engineering, modeling system reliability with phase-type distributions. Applied Expectation-Maximization (EM) algorithms to estimate distribution parameters and contributed to their implementation in the research group's software.</p>
+              </li>
+              <li class="timeline-item">
+                <h4>Database Technologist</h4>
+                <span class="timeline-org">SENAC São Paulo</span>
+                <span class="timeline-meta">Mar 2021 — Jul 2023</span>
+                <p>Database management fundamentals — SQL and NoSQL, data modeling, querying and data manipulation.</p>
+              </li>
+              <li class="timeline-item">
+                <h4>Master's in Mathematics</h4>
+                <span class="timeline-org">Universidade Federal da Paraíba</span>
+                <span class="timeline-meta">Jun 2009 — Aug 2011 · João Pessoa, Brazil</span>
+                <p>Research in algebraic geometry; dissertation on static curves in the complex projective plane.</p>
+              </li>
+              <li class="timeline-item">
+                <h4>Degree in Mathematics Education</h4>
+                <span class="timeline-org">Universidade Federal Rural de Pernambuco</span>
+                <span class="timeline-meta">Mar 2005 — Dec 2008 · Recife, Brazil</span>
+                <p>Research on the local-global principle via the Hasse–Minkowski theorem, relating rational solutions of quadratic forms to their local completions.</p>
+              </li>
+            </ol>
+
+            <div class="timeline-head" style="margin-top: 40px;">
+              <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/><path d="M8.2 13.9L7 22l5-3 5 3-1.2-8.1"/></svg></span>
+              <h3>Certificates</h3>
+            </div>
+            <div class="cert-grid">
+              <div class="cert-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Neural Networks and Deep Learning</div>
+              <div class="cert-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Improving Deep Neural Networks (Hyperparameter Tuning &amp; Optimization)</div>
+              <div class="cert-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Data Science: Solving Real Problems with Python &amp; Pandas</div>
+              <div class="cert-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Data Science: Data Visualization with Python</div>
+              <div class="cert-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Support Vector Machine Classification in Python</div>
+              <div class="cert-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Predict Future Product Prices Using Facebook Prophet</div>
+              <div class="cert-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Foundations: Data, Data, Everywhere</div>
+              <div class="cert-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Ask Questions to Make Data-Driven Decisions</div>
+              <div class="cert-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Prepare Data for Exploration</div>
+              <div class="cert-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Introduction to Git and GitHub</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PUBLICATIONS ============ -->
+    <section id="publications">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Publications</span>
+          <h2 class="section-title">Research</h2>
+          <p class="section-lede">Peer-reviewed work on reliability modeling, fog computing and applied machine learning.</p>
+        </div>
+
+        <div class="pub-list">
+          <article class="pub-item" data-reveal>
+            <span class="pub-year">2024</span>
+            <div>
+              <h4>Automated phase-type distribution fitting via expectation maximization</h4>
+              <p class="pub-authors">M. Mialaret, P. Pereira, A. Sá Barreto, T. Pinheiro, P. Maciel</p>
+              <p class="pub-venue">Journal of Reliable Intelligent Environments</p>
+            </div>
+          </article>
+          <article class="pub-item" data-reveal>
+            <span class="pub-year">2024</span>
+            <div>
+              <h4>Automated Reliability Analysis in Fog Computing Environment</h4>
+              <p class="pub-authors">M. Mialaret, et al.</p>
+              <p class="pub-venue">Workshop on Resilience Engineering in Computing Systems (RECS), SBC</p>
+            </div>
+          </article>
+          <article class="pub-item" data-reveal>
+            <span class="pub-year">2021</span>
+            <div>
+              <h4>Building energy consumption models based on smartphone user usage patterns</h4>
+              <p class="pub-authors">A. Sá Barreto Neto, F. Farias, M. Mialaret, B. Cartaxo, P. Lima, P. Maciel</p>
+              <p class="pub-venue">Knowledge-Based Systems</p>
+            </div>
+          </article>
+          <article class="pub-item" data-reveal>
+            <span class="pub-year">2021</span>
+            <div>
+              <h4>A methodology for selecting hardware performance counters for supporting non-intrusive diagnostic of flood DDoS attacks on web servers</h4>
+              <p class="pub-authors">P. P. Nascimento, P. Pereira, M. Mialaret, I. Ferreira, P. Maciel</p>
+              <p class="pub-venue">Computers &amp; Security</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Projects</span>
+          <h2 class="section-title">Selected work</h2>
+          <p class="section-lede">A sample from <a href="https://github.com/MatmJr" target="_blank" rel="noopener" style="text-decoration:underline;">github.com/MatmJr</a> — data pipelines, agentic AI and teaching materials.</p>
+        </div>
+
+        <div class="project-grid">
+
+          <article class="project-card" data-reveal>
+            <div class="project-card-top">
+              <span class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></span>
+              <div class="project-links">
+                <a href="https://github.com/MatmJr/AirportsProject" target="_blank" rel="noopener" class="icon-btn" aria-label="AirportsProject on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.6.1-3.2 0 0 1.1-.3 3.4 1.3a12 12 0 0 1 6.2 0c2.3-1.6 3.4-1.3 3.4-1.3.7 1.7.2 2.9.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>AirportsProject</h3>
+            <p>An end-to-end PySpark pipeline, containerized with Docker Compose, for processing airport data at scale.</p>
+            <div class="project-tags"><span>PySpark</span><span>Docker</span><span>Data Engineering</span></div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card-top">
+              <span class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+              <div class="project-links">
+                <a href="https://github.com/MatmJr/LLMCreditCardBot" target="_blank" rel="noopener" class="icon-btn" aria-label="LLMCreditCardBot on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.6.1-3.2 0 0 1.1-.3 3.4 1.3a12 12 0 0 1 6.2 0c2.3-1.6 3.4-1.3 3.4-1.3.7 1.7.2 2.9.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>LLMCreditCardBot</h3>
+            <p>A natural-language-to-SQL chatbot powered by GPT-4o-mini, letting users query a delinquency and demographic database through a Streamlit interface.</p>
+            <div class="project-tags"><span>LLM</span><span>Streamlit</span><span>SQL</span></div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card-top">
+              <span class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="20" x2="4" y2="11"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="20" y1="20" x2="20" y2="15"/></svg></span>
+              <div class="project-links">
+                <a href="https://github.com/MatmJr/ETL_IBGE_BCB" target="_blank" rel="noopener" class="icon-btn" aria-label="ETL_IBGE_BCB on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.6.1-3.2 0 0 1.1-.3 3.4 1.3a12 12 0 0 1 6.2 0c2.3-1.6 3.4-1.3 3.4-1.3.7 1.7.2 2.9.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>ETL_IBGE_BCB</h3>
+            <p>An ETL pipeline that extracts Brazilian Central Bank data, transforms it with Pandas, loads it into SQLite/CSV, and visualizes it through a Dash + Plotly dashboard.</p>
+            <div class="project-tags"><span>ETL</span><span>Pandas</span><span>Dash</span></div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card-top">
+              <span class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3v6l-6 9a2 2 0 0 0 2 3h14a2 2 0 0 0 2-3l-6-9V3"/><path d="M6 15h12"/></svg></span>
+              <div class="project-links">
+                <a href="https://github.com/MatmJr/End2EndTitanic" target="_blank" rel="noopener" class="icon-btn" aria-label="End2EndTitanic on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.6.1-3.2 0 0 1.1-.3 3.4 1.3a12 12 0 0 1 6.2 0c2.3-1.6 3.4-1.3 3.4-1.3.7 1.7.2 2.9.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>End2EndTitanic</h3>
+            <p>A Flask web app that predicts Titanic passenger survival probability using a Random Forest model.</p>
+            <div class="project-tags"><span>Flask</span><span>scikit-learn</span><span>ML</span></div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card-top">
+              <span class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5"/></svg></span>
+              <div class="project-links">
+                <a href="https://github.com/MatmJr/CursoBigData" target="_blank" rel="noopener" class="icon-btn" aria-label="CursoBigData on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.6.1-3.2 0 0 1.1-.3 3.4 1.3a12 12 0 0 1 6.2 0c2.3-1.6 3.4-1.3 3.4-1.3.7 1.7.2 2.9.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>CursoBigData</h3>
+            <p>Lecture slides, notebooks and code used to teach Big Data — the most-starred repository on my GitHub.</p>
+            <div class="project-tags"><span>Teaching</span><span>PySpark</span><span>Jupyter</span></div>
+          </article>
+
+        </div>
+
+        <div class="projects-more">
+          <a href="https://github.com/MatmJr" target="_blank" rel="noopener" class="btn btn-outline">
+            See all repositories on GitHub
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Contact</span>
+          <h2 class="section-title">Let's talk</h2>
+          <p class="section-lede">Open to conversations about data architecture, agentic AI, reliability research or teaching.</p>
+        </div>
+
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:marcomialaret@gmail.com" data-reveal>
+            <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></span>
+            <h4>Email</h4>
+            <p>marcomialaret@gmail.com</p>
+          </a>
+          <a class="contact-card" href="https://www.linkedin.com/in/marco-mialaret-junior/" target="_blank" rel="noopener" data-reveal>
+            <span class="icon-box"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.4 20.4h-3.5v-5.6c0-1.3 0-3-1.9-3s-2.1 1.5-2.1 3v5.6H9.4V9h3.4v1.6c.5-.9 1.7-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.1zM5.3 7.4A2 2 0 1 1 5.3 3.4a2 2 0 0 1 0 4zM7 20.4H3.6V9H7v11.4z"/></svg></span>
+            <h4>LinkedIn</h4>
+            <p>marco-mialaret-junior</p>
+          </a>
+          <a class="contact-card" href="https://github.com/MatmJr" target="_blank" rel="noopener" data-reveal>
+            <span class="icon-box"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.6.1-3.2 0 0 1.1-.3 3.4 1.3a12 12 0 0 1 6.2 0c2.3-1.6 3.4-1.3 3.4-1.3.7 1.7.2 2.9.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg></span>
+            <h4>GitHub</h4>
+            <p>github.com/MatmJr</p>
+          </a>
+          <a class="contact-card" href="https://www.google.com/maps/place/Recife" target="_blank" rel="noopener" data-reveal>
+            <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <h4>Location</h4>
+            <p>Recife, Pernambuco, Brazil</p>
+          </a>
+        </div>
+      </div>
+    </section>
 
   </main>
 
+  <footer class="site-footer">
+    <div class="container">
+      &copy; <span data-year>2026</span> Marco Mialaret Júnior. Built with plain HTML, CSS &amp; JS.
+    </div>
+  </footer>
 
-
-
-
-
-  <!--
-    - custom js link
-  -->
   <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>
